@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dissapearing Circle Game | Udokovic Soft</title>
+    <style type="text/css">
+        #shape {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: none;
+            border: 2px solid white;
+        }
+        body{
+            background-color: #1E0555;
+            color: #F0DB4F;
+        }
+        .circ{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #F0DB4F;
+        }
+        .hide{
+            display: none;
+        }
+        #startgame{
+            padding: 6px;
+            border-radius: 7px;
+            border: 1px solid white;
+        }
+        
+    </style>
+</head>
+
+<body id="body">
+    <div id="gamestart">
+       <h1 style="text-align: center;">Dissapearing Circles</h1> 
+        <center><div class="circ"></div></center><br>
+       <center><button id="startgame">Start Game</button></center> 
+    </div>
+    <audio id="gameaudio" src="./sounddd/Sega Genesis - Sonic The Hedgehog - Green Hill Zone.mp3" autoplay loop></audio>
+    <audio id="play" src="./sounddd/kliq.mp3"></audio>
+    <div id="main-game">
+   <h2>Dissapearing Circles</h2> 
+   <h3>click the shapes as fast as you can!!!</h3> 
+    <h3>Time taken: <span id="timer"></span></h3>
+    <div style="width: 100vw; height: 100vh; box-sizing: border-box;">
+    <div id="shape"></div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+    
+    document.getElementById('main-game').classList.add('hide')
+    document.getElementById('startgame').onclick =  function () {
+        document.getElementById('gamestart').classList.add('hide')
+        document.getElementById('main-game').classList.remove('hide')
+        delay()
+    }
+    gameaudio.volume = 0.2;
+    function randcolor() {
+        var letters = '0123456789ABCDEF'.split('');
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)]
+        }
+        return color;
+    }
+    var start = new Date().getTime();
+    function shapeappear() {
+        var top = Math.random() * 200;
+        var left = Math.random() * 150;
+        var bottom = Math.random() * 400;
+        var right = Math.random() * 400;
+        var width = (Math.random() * 100) + 20;
+        var height = width;
+        if (Math.random() > 0.5) {
+            document.getElementById('shape').style.borderRadius = "50%"
+        }else{ document.getElementById('shape').style.borderRadius = "0%"}
+        document.getElementById('shape').style.backgroundColor = randcolor()
+        document.getElementById('shape'). style.marginRight = + right + "px";
+        document.getElementById('shape'). style.marginLeft = + left + "px";
+        document.getElementById('shape'). style.marginTop = + top + "px";
+        document.getElementById('shape'). style.marginBottom = + bottom + "px";
+        document.getElementById('shape'). style.width = + width + "px";
+        document.getElementById('shape'). style.height = + height + "px";
+        document.getElementById('shape').style.display = "block";
+        start = new Date().getTime();
+    }
+    function delay() {
+        setTimeout(shapeappear, Math.random() * 2000);
+    }
+        document.getElementById('shape').onclick = function () {
+            document.getElementById('play').play()
+            document.getElementById('shape').style.display = "none "
+            var end = new Date().getTime();
+            var timetaken = ((end - start) / 1000);
+            var timer = document.getElementById('timer')
+            timer.innerHTML = timetaken + "s"
+            delay()
+        }
+    </script>
+</body>
+
+</html>

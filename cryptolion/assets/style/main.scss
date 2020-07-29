@@ -1,0 +1,703 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+.none{
+    display: none;
+}
+
+.gen-site{
+    background-color: #F2F7F8;
+    margin-top: 12vh;
+}
+
+.back-top{
+    color: white;
+    border-radius: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    bottom: 2px;
+    left: 2px;
+    background-color: black;
+    z-index: 15000;
+    .tp{
+        animation: animate 1s infinite;
+        transition: all 0.5s ease-in-out;
+    }
+    &:hover{
+        transform: scale(1.06);
+    }
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    100%{
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+    }
+}
+.nav{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+
+    .logo{
+        .logo-img{
+            width: 60px;
+        }
+    a{
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+        color: inherit;
+        h1{
+            font-weight: 200;
+        }
+    }
+    }
+
+    .links{
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        ul{
+            display: flex;
+        }
+
+        li{
+            list-style: none;
+            margin: 0 25px;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                color: #e6e6e6;
+            }
+        }
+    }
+}
+
+// !Main Div
+.main-page{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    .descp{
+        h1{
+            color: #276345;
+            font-weight: 200;
+            border: 1px solid #276345;
+            width: fit-content;
+            padding: 25px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(1.09);
+                background-color: #276345;
+                color: #fff;
+            }
+        }
+    }
+}
+.main{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color: white;
+    width: 45%;
+    form{
+        width: 60%;
+        .form-group{
+            width: 100%;
+            input{
+                width: 100%;
+            }
+        }
+        button{
+            background-color: #2A4382;
+            padding:10px 20px;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(1.08);
+                background-color: #3a569e;
+            }
+            &:focus{
+                transform: scale(0.80);
+            }
+        }
+    }
+}
+
+.inform{
+    margin: 30px;
+    display: grid;
+    width: 65%;
+    grid-template-columns: repeat(auto-fit, 48%);
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+    
+.information-div{
+    cursor: pointer;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    .icn{
+        font-size: 42px;
+        color: white;
+    }
+    &:hover{
+        transform: scale(1.09);
+    }
+}
+}
+
+.content{
+   color: white;
+   h5{
+       font-size: 40px;
+   }
+}
+
+// !AFFILATE
+
+.affilate{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    .aff-inner{
+        .aff-icn{
+            font-size: 50px;
+            color:  inherit;
+            }
+        padding: 10px;
+        border-radius: 6px;
+        width: 50%;
+        background-color: white;
+        height: 250px;
+        border-right: 1px solid rgb(214, 214, 214);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
+
+// !Accepted Payments
+
+.accepted-payments{
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: white;
+    .accepted-payments-img{
+        img{
+            margin-left: 30px;
+        }
+
+        .odd-one{
+            font-weight: 700;
+            font-style: italic;
+            font-size: 25px;
+            opacity: 0.91;
+            cursor: pointer;
+        }
+    }
+}
+
+// !FAQS
+
+.faqs{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.contact{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    .mail-add{
+        .fa-envelope{
+            font-size: 50px;
+        }
+        display: flex;
+        align-items: center;
+        .txt-mail{
+            margin-left: 10px;
+        }
+    }
+}
+
+
+// !!!!!!!!!!!!!!!!!DASHBOARD!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.dashboard{
+    width: 80%;
+    margin: 0 auto;
+    .descp{
+        h1{
+            color: #276345;
+            font-weight: 200;
+            border: 1px solid #276345;
+            width: fit-content;
+            padding: 25px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(1.09);
+                background-color: #276345;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.wallet-id{
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid rgb(151, 151, 151);
+    width: 90%;
+    height: 40px;
+    align-items: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 7px solid black;
+    img{
+        width: 20px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+    h5{
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+}
+
+.butts{
+    width: 100%;
+    form{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+}
+}
+
+// !Account
+.account{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.account-inner{
+    display: flex;
+    justify-content: space-between;
+    .account-nav{
+        padding: 25px;
+        background-color: white;
+        width: 25%;
+        .inner-acc-nav{
+            margin: 5px;
+            border: 1px solid #b8b8b8;
+            border-radius: 4px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: white;
+           .active-nav{
+               background-color: #009EFB;
+               color: white;
+               &:hover{
+                   background-color: #009EFB;
+                   color: white;
+               }
+           }
+                a{
+                    cursor: pointer;
+                    text-decoration: none;
+                    li{
+                        .icn-nav{
+                            margin-right: 9px;
+                        }
+                        cursor: pointer;
+                        padding: 15px;
+                        border-bottom: 1px solid #b8b8b8;
+                        font-size: 17px;
+                        list-style: none;
+                        width: 100%;
+                        height: auto;
+                        color: #439C4C;
+                        transition: all 0.3s ease-in-out;
+                        &:hover{
+                            background-color: #F2F7F8;
+                            color: #294084;
+                        }
+                    }
+                }
+            
+        }
+        
+    }
+
+    .acc-content{
+        width: 75%;
+    }
+}
+
+// !Styling My Loader Screen
+.loader-p{
+    z-index: 800000000000000;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #3B7F5C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// !DEPOSIT PAGE
+
+.deposit-page{
+    width: 30%;
+    margin: 0 auto;
+    .qr{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.mobile-nav{
+    overflow-y: scroll;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 auto;
+            flex-direction: column;
+            width: 100%;
+            position: fixed;
+            background-color: #202121;
+            height: 100vh;
+            clip-path: circle(40px at 90% -20%);
+            -webkit-clip-path: circle(40px at 90% -20%);
+            transition: all 1s ease-out;
+            color: white;
+            z-index: 20000;
+
+            ul{
+                a{
+                    text-align: center;
+                    text-decoration: none;
+                }
+                li{
+                    text-align: center;
+                    margin-top: 80px;
+                    list-style: none;
+                    color: white;
+                }
+            }
+}
+
+.mobile-nav.open{
+    clip-path: circle(2000px at 90% -20%);
+    -webkit-clip-path: circle(2000px at 90% -20%);
+    transition: all 1s ease-out;
+}
+
+#bar{
+    display: none;
+}
+// !MEDIA QUERY
+@media only screen and (max-width: 996px) {
+    .nav{
+        width: 100%;
+            .logo{
+                a{
+                    .logo-img{
+                        width: 40px;
+                    }
+                    h1{
+                        font-size: 25px;
+                    }
+                }
+            }
+        
+        .links{
+            display: none;
+        }
+
+        #bar{
+            display: inline-block;
+            font-size: 27px;
+            cursor: pointer;
+            z-index: 400000;
+        }
+    }
+    .main-page{
+        width: 100%;
+        .descp{
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    .main{
+        display: block;
+
+        .form{
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            margin-bottom: 50px;
+            form{
+                width: 85%;
+            }
+            .form-group{
+                width: 100%;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+        .inform{
+            grid-template-columns: repeat(auto-fit, 100%);
+            width: 90%;
+            margin: 0 auto;
+            .information-div{
+                width: 100%;
+                .content{
+                    width: 100%;
+                    h5{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .affilate{
+        width: 100%;
+        display: block;
+        .aff-inner{
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+                transform: scale(1.07);
+            }
+        }
+    }
+
+    .accepted-payments{
+        h3{
+            font-size: 20px;
+        }
+        display: block;
+        padding: 0;
+        width: 90%;
+        img{
+            display: block;
+            margin-left: 0;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+        .odd-one{
+            margin-top: 10px;
+        }
+    }
+
+    .contact{
+        width: 90%;
+        h3{
+            font-size: 20px;
+        }
+        .mail-add{
+            display: block;
+            .env{
+                text-align: center;
+            }
+        }
+        .txt-mail{
+            display: block;
+            h5{
+                font-size: 15px;
+            }
+        }
+    }
+
+    // !DASHBOARD
+
+    .dashboard{
+        width: 90%;
+        .descp{
+            h1{
+                padding: 20px;
+                font-size: 17px;
+            }
+            h5{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .form{
+        width: 100%;
+        h3{
+            font-size: 19px;
+        }
+    }
+    .wallet-id{
+        width: 100%;
+        text-align: center;
+        h5{
+            font-size: 11px;
+            font-weight: 600;
+        }
+    }
+
+    .butts{
+        width: 100%;
+        form{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            font-size: 13px;
+        }
+        button{
+            margin-left: 12px;
+        }
+    }
+}
+
+.account{
+    width: 100%;
+}
+.account-inner{
+    display: block;
+    .account-nav{
+        width: 100%;
+    }
+    .acc-content{
+        width: 100%;
+    }
+}
+
+.deposit-page{
+    width: 90%;
+    .qr{
+        display: block;
+    }
+}
+
+.footer{
+    height: 15vh;
+    h3{
+        font-size: 15px;
+    }
+    span{
+        font-size: 12px;
+    }
+}
+}
+
+@media only screen and (max-width: 375px) {
+    .main-page{
+        width: 100%;
+        .descp{
+            h1{
+                font-size: 18px;
+            }
+            h5{
+                font-size: 15px;
+            }
+            text-align: center;
+            padding: 20px;
+        }
+    }
+
+    .form{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+        form{
+            width: 90%;
+        }
+        .form-group{
+            width: 100%;
+            input{
+                width: 100%;
+            }
+        }
+    }
+}
+

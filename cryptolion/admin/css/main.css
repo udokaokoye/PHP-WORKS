@@ -1,0 +1,97 @@
+.nav {
+  background: #283c86;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#45a247), to(#283c86));
+  background: linear-gradient(to right, #45a247, #283c86);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  width: 100%;
+  padding: 25px;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  color: inherit;
+  margin-left: 35px;
+  margin-right: 5px;
+}
+
+.bd div {
+  width: 80%;
+  height: 50vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 9px;
+}
+
+.bd div h3 {
+  font-size: 40px;
+}
+
+.ic {
+  font-size: 60px;
+}
+
+@media only screen and (max-width: 996px) {
+  ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  ul a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ul li {
+    font-size: 10px;
+    list-style: none;
+    color: inherit;
+    margin-left: 35px;
+    margin-right: 5px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

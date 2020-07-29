@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.my-nav{
+    width: 100%;
+    h2{
+        color: rgb(243, 243, 243);
+    }
+    padding: 10px;
+
+    .my-main-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .search-btn{
+            padding: 6px 10px;
+            border: 1px solid white;
+            border-radius: 4px;
+            background-color: transparent;
+            transition: all 0.4s ease-in-out;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                background-color: white;
+                color: #343A40;
+            }
+        }
+        .left-nav{
+            ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .login{
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .login-extended{
+                z-index: 22;
+                position: absolute;
+                display: none;
+                margin-top: 20px;
+                background-color: #343A40;
+                small{
+                    text-align: center;
+                }
+                li{
+                    border-radius: 0;
+                    width: 100%;
+                    border-bottom: 1px solid white;
+                    cursor: pointer;
+                    background-color: #343A40;
+                    color: white;
+                    text-align: center;
+                    &:hover{
+                        background-color: rgb(29, 31, 34);
+                        color: rgb(212, 212, 212);
+                    }
+                }
+            }
+            .cart{
+                i{
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+            }
+            li{
+                cursor: pointer;
+                border-radius: 5px;
+                color: #343A40;
+                background-color: white;
+                transition: all 0.5s ease-in-out;
+                padding: 8px;
+                border: 1px solid white;
+                i{
+                    font-size: 15px;
+                    color: #343A40;
+                }
+                &:hover{
+                    background-color: transparent;
+                    color: white;
+                    border: 1px solid white;
+                    i{
+                        color: white;
+                    }
+                }
+            }
+        }
+        }
+    }
+}
+
+// BANNER AREA 
+
+.banner-area{
+    width: 100%;
+    height: 90vh;
+    img{
+        height: 85vh;
+        width: 100vw;
+    }
+}
+
+
+// TOP SALES
+
+#top-sale{
+    .owl-carousel .item .product a{
+        overflow: hidden;
+    }
+
+    .owl-carousel .item .product img{
+       width: 500px;
+       height: 150px;
+       margin: 0 auto;
+       transition: transform 0.5s ease;
+       &:hover{
+           transform: scale(1.1);
+       }
+    }
+
+    .owl-carousel{
+        display: none;
+    }
+    .owl-page span{
+        color: red;
+    }
+
+    
+}
+
+// SPECIAL PRICE
+
+#special-price{
+    .grid-item{
+        margin: 10px;
+        img{
+            width: 500px;
+            height: 150px;
+            transition: transform 0.5s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
+        }
+    }
+}

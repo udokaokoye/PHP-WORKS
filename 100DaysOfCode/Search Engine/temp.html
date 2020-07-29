@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Search Engigne</title>
+    <style>
+        body{
+            background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <center>
+            <form class="form-inline mt-5" action="index.php" method="POST">
+                <div class="form-group">
+                  <input type="text" required name="search_input" class="form-control mx-sm-3" placeholder="Search">
+                </div>
+                <div class="form-group">
+                  <button type="submit" name="search" class="form-control btn btn-info"><i class="fas fa-search"></i></button>
+                </div>
+              </form>
+        </center>
+    </div>
+    <div class="footer">
+        <h6 class="text-center text-white mt-3">Powered By Udokovic Soft</h6>
+    </div>
+</body>
+</html>

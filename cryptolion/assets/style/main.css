@@ -1,0 +1,841 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.none {
+  display: none;
+}
+
+.gen-site {
+  background-color: #F2F7F8;
+  margin-top: 12vh;
+}
+
+.back-top {
+  color: white;
+  border-radius: 50%;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  bottom: 2px;
+  left: 2px;
+  background-color: black;
+  z-index: 15000;
+}
+
+.back-top .tp {
+  -webkit-animation: animate 1s infinite;
+          animation: animate 1s infinite;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.back-top:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.nav {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #283c86;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#45a247), to(#283c86));
+  background: linear-gradient(to right, #45a247, #283c86);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.nav .logo .logo-img {
+  width: 60px;
+}
+
+.nav .logo a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav .logo a h1 {
+  font-weight: 200;
+}
+
+.nav .links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .links li {
+  list-style: none;
+  margin: 0 25px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .links li:hover {
+  color: #e6e6e6;
+}
+
+.main-page {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.main-page .descp h1 {
+  color: #276345;
+  font-weight: 200;
+  border: 1px solid #276345;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-page .descp h1:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  background-color: #276345;
+  color: #fff;
+}
+
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  background-color: white;
+  width: 45%;
+}
+
+.form form {
+  width: 60%;
+}
+
+.form form .form-group {
+  width: 100%;
+}
+
+.form form .form-group input {
+  width: 100%;
+}
+
+.form form button {
+  background-color: #2A4382;
+  padding: 10px 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.form form button:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  background-color: #3a569e;
+}
+
+.form form button:focus {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.inform {
+  margin: 30px;
+  display: -ms-grid;
+  display: grid;
+  width: 65%;
+  -ms-grid-columns: (48%)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 48%);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inform .information-div {
+  cursor: pointer;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.inform .information-div .icn {
+  font-size: 42px;
+  color: white;
+}
+
+.inform .information-div:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.content {
+  color: white;
+}
+
+.content h5 {
+  font-size: 40px;
+}
+
+.affilate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.affilate .aff-inner {
+  padding: 10px;
+  border-radius: 6px;
+  width: 50%;
+  background-color: white;
+  height: 250px;
+  border-right: 1px solid #d6d6d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.affilate .aff-inner .aff-icn {
+  font-size: 50px;
+  color: inherit;
+}
+
+.affilate .aff-inner p {
+  text-align: center;
+  padding: 10px;
+}
+
+.accepted-payments {
+  padding: 10px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: white;
+}
+
+.accepted-payments .accepted-payments-img img {
+  margin-left: 30px;
+}
+
+.accepted-payments .accepted-payments-img .odd-one {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 25px;
+  opacity: 0.91;
+  cursor: pointer;
+}
+
+.faqs {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact .mail-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .mail-add .fa-envelope {
+  font-size: 50px;
+}
+
+.contact .mail-add .txt-mail {
+  margin-left: 10px;
+}
+
+.dashboard {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dashboard .descp h1 {
+  color: #276345;
+  font-weight: 200;
+  border: 1px solid #276345;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.dashboard .descp h1:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  background-color: #276345;
+  color: #fff;
+}
+
+.wallet-id {
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid #979797;
+  width: 90%;
+  height: 40px;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 7px solid black;
+}
+
+.wallet-id img {
+  width: 20px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.wallet-id h5 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+.butts {
+  width: 100%;
+}
+
+.butts form {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.account {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.account-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account-inner .account-nav {
+  padding: 25px;
+  background-color: white;
+  width: 25%;
+}
+
+.account-inner .account-nav .inner-acc-nav {
+  margin: 5px;
+  border: 1px solid #b8b8b8;
+  border-radius: 4px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.account-inner .account-nav .inner-acc-nav .active-nav {
+  background-color: #009EFB;
+  color: white;
+}
+
+.account-inner .account-nav .inner-acc-nav .active-nav:hover {
+  background-color: #009EFB;
+  color: white;
+}
+
+.account-inner .account-nav .inner-acc-nav a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.account-inner .account-nav .inner-acc-nav a li {
+  cursor: pointer;
+  padding: 15px;
+  border-bottom: 1px solid #b8b8b8;
+  font-size: 17px;
+  list-style: none;
+  width: 100%;
+  height: auto;
+  color: #439C4C;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.account-inner .account-nav .inner-acc-nav a li .icn-nav {
+  margin-right: 9px;
+}
+
+.account-inner .account-nav .inner-acc-nav a li:hover {
+  background-color: #F2F7F8;
+  color: #294084;
+}
+
+.account-inner .acc-content {
+  width: 75%;
+}
+
+.loader-p {
+  z-index: 800000000000000;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #3B7F5C;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.deposit-page {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.deposit-page .qr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-nav {
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: fixed;
+  background-color: #202121;
+  height: 100vh;
+  clip-path: circle(40px at 90% -20%);
+  -webkit-clip-path: circle(40px at 90% -20%);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  color: white;
+  z-index: 20000;
+}
+
+.mobile-nav ul a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.mobile-nav ul li {
+  text-align: center;
+  margin-top: 80px;
+  list-style: none;
+  color: white;
+}
+
+.mobile-nav.open {
+  clip-path: circle(2000px at 90% -20%);
+  -webkit-clip-path: circle(2000px at 90% -20%);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+#bar {
+  display: none;
+}
+
+@media only screen and (max-width: 996px) {
+  .nav {
+    width: 100%;
+  }
+  .nav .logo a .logo-img {
+    width: 40px;
+  }
+  .nav .logo a h1 {
+    font-size: 25px;
+  }
+  .nav .links {
+    display: none;
+  }
+  .nav #bar {
+    display: inline-block;
+    font-size: 27px;
+    cursor: pointer;
+    z-index: 400000;
+  }
+  .main-page {
+    width: 100%;
+  }
+  .main-page .descp {
+    text-align: center;
+    padding: 20px;
+  }
+  .main {
+    display: block;
+  }
+  .main .form {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+  }
+  .main .form form {
+    width: 85%;
+  }
+  .main .form .form-group {
+    width: 100%;
+  }
+  .main .form .form-group input {
+    width: 100%;
+  }
+  .main .inform {
+    -ms-grid-columns: (100%)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 100%);
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main .inform .information-div {
+    width: 100%;
+  }
+  .main .inform .information-div .content {
+    width: 100%;
+  }
+  .main .inform .information-div .content h5 {
+    font-size: 30px;
+  }
+  .affilate {
+    width: 100%;
+    display: block;
+  }
+  .affilate .aff-inner {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .affilate .aff-inner:hover {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+  .accepted-payments {
+    display: block;
+    padding: 0;
+    width: 90%;
+  }
+  .accepted-payments h3 {
+    font-size: 20px;
+  }
+  .accepted-payments img {
+    display: block;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .accepted-payments .odd-one {
+    margin-top: 10px;
+  }
+  .contact {
+    width: 90%;
+  }
+  .contact h3 {
+    font-size: 20px;
+  }
+  .contact .mail-add {
+    display: block;
+  }
+  .contact .mail-add .env {
+    text-align: center;
+  }
+  .contact .txt-mail {
+    display: block;
+  }
+  .contact .txt-mail h5 {
+    font-size: 15px;
+  }
+  .dashboard {
+    width: 90%;
+  }
+  .dashboard .descp h1 {
+    padding: 20px;
+    font-size: 17px;
+  }
+  .dashboard .descp h5 {
+    font-size: 15px;
+  }
+  .form {
+    width: 100%;
+  }
+  .form h3 {
+    font-size: 19px;
+  }
+  .wallet-id {
+    width: 100%;
+    text-align: center;
+  }
+  .wallet-id h5 {
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .butts {
+    width: 100%;
+  }
+  .butts form {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .butts form .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    font-size: 13px;
+  }
+  .butts form button {
+    margin-left: 12px;
+  }
+  .account {
+    width: 100%;
+  }
+  .account-inner {
+    display: block;
+  }
+  .account-inner .account-nav {
+    width: 100%;
+  }
+  .account-inner .acc-content {
+    width: 100%;
+  }
+  .deposit-page {
+    width: 90%;
+  }
+  .deposit-page .qr {
+    display: block;
+  }
+  .footer {
+    height: 15vh;
+  }
+  .footer h3 {
+    font-size: 15px;
+  }
+  .footer span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main-page {
+    width: 100%;
+  }
+  .main-page .descp {
+    text-align: center;
+    padding: 20px;
+  }
+  .main-page .descp h1 {
+    font-size: 18px;
+  }
+  .main-page .descp h5 {
+    font-size: 15px;
+  }
+  .form {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+  }
+  .form form {
+    width: 90%;
+  }
+  .form .form-group {
+    width: 100%;
+  }
+  .form .form-group input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

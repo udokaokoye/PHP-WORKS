@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#backtotop {
+    z-index: 400000;
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+        transition: all 0.5s ease;
+        background-color: black;
+        #chev-up{
+        color: white;
+        }
+    }
+  }
+  
+  #chev-up {
+    color: black;
+    font-size: 20px;
+  }
+.nav{
+    width: 100%;
+    height: 10vh;
+    background-color: #343A40 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h1{
+        color: #fff;
+    }
+}
+body{
+    background-color: rgb(238, 236, 236);
+}
+html{
+    scroll-behavior: smooth;
+}
+.gen{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-div{
+    width: 20%;
+    padding: 9px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 8px;
+    form{
+        color: #5f5e5e;
+        text-align: center;
+        .text-input2{
+            margin-top: 45px;
+            height:35px;
+            text-align: center;
+            border-radius: 15px;
+            border: 1px solid #5f5e5e;
+            color: #5f5e5e;
+            &:focus{
+                color: black;
+            }
+            
+        }
+        .text-input{
+            height:35px;
+            text-align: center;
+            border-radius: 15px;
+            border: 1px solid #5f5e5e;
+            color: #5f5e5e;
+            &:focus{
+                color: black;
+            }
+            }
+        .sub-btn{
+            padding: 15px;
+            border-radius: 9px;
+            color: #5f5e5e;
+            background-color: white;
+            border: 1px solid black;
+            cursor: pointer;
+            &:hover{
+                background-color: #5f5e5e;
+                color: white;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+        
+    }
+}
+
+#admin-link, #student-link{
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(224, 224, 224);
+    &:hover{
+        color: white;
+        transition: all 0.5s ease;
+    }
+}
+.hide{
+    display: none;
+}
+
+.logoutbtn{
+    padding:10px 20px;
+    border-radius: 9px;
+    background-color: #5f5e5e;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.error{
+    width: 100%;
+    height: auto;
+    background-color: #F2DEDE;
+    height: 8vh;
+    color: #A94442;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+// Side Nav
+
+.side-nav{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(209, 209, 209);
+    height: auto;
+    background-color: #343A40;
+    border-top: 1px solid rgb(77, 76, 76);
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+    ul{
+        width: 100%;
+        font-family: sans-serif;
+        font-size: 16px;
+        a{
+            font-weight: bolder;
+        }
+
+       
+        
+        li{
+            margin-left: 25px;
+            list-style: none;
+            width: 100%;
+            padding: 25px 0;
+            color: white;
+            &:hover{
+                transform: translateX(3%);
+                transition: all 0.5s ease-in-out;
+                border-left: 1px solid #81CA00;
+                padding-left: 20px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+            &:focus{
+                border: none;
+            }
+            i{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+// SIDE NAV PROFILE IMAGE
+.nav-profile-image{
+width: 100px; 
+height: 100px; 
+border-radius: 50%; 
+&:hover{
+    box-shadow: 0 4px 8px 0 #81CA00,0 6px 20px 0 rgb(100, 158, 0);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+}
+.show-message{
+    &:hover{
+        padding-left: 0;
+        border-left: none;
+    }
+    cursor: pointer;
+    .message{
+        li{
+            color: white;
+            font-weight: bolder;
+            padding-left: 10px;
+            &:hover{
+                transition: all ease-in-out 0.3s;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+            }
+        }
+    }
+}
+
+.title-display{
+    background-color: rgb(115, 180, 2);
+    color: white;
+    padding: 10px;
+    cursor: none;
+    transform: scale(1.05);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.show{
+   display: flex;
+   transform: translateX(-500px);
+   width: 0px;
+    transition: all 1s ease-in-out;
+}
+
+
+.det{
+    width: 100%;
+    background-color: white;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+}
+
+// STUDENT PORTAL
+
+.user-name{
+    color: rgb(145, 40, 40);
+    
+}
+
+.welcome-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: rgb(80, 80, 80);
+            &:hover{
+                color: rgb(11, 142, 185);
+                transition: all 0.3s ease-in-out;
+            }
+            i{
+                color: rgb(29, 170, 218);
+                margin-right: 12px;
+            }
+        }
+        li{
+            list-style: none;
+            margin-right: 45px;
+            text-decoration: none;
+        }
+    }
+}
+
+.stuclass{
+    line-height: 32px;
+}
+.profile-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    li{
+        margin-left: 15px;
+        list-style-type: none;
+    }
+    div{
+        display: flex;
+        i{
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .drop{
+            .drop-show{
+                position: absolute;
+                width: 200px;
+                display: none;
+                background-color: transparent;
+                text-align: center;
+                line-height: 35px;
+                padding: 10px;
+                button{
+                    border: none;
+                    background-color: transparent;
+                }
+                li{
+                    background-color: white;
+                    border: 1px solid white;
+                    border-bottom: 1px solid black;
+                    padding: 10px;
+                    &:hover{
+                        transition: all 0.4s ease-in-out;
+                        background-color: #F5F5F5;
+                        color: black;
+                    }
+                }
+            }
+            &:hover .drop-show{
+                transition: all 0.5s ease;
+                display: block;
+            }
+        }
+    }
+}
+
+.showme{
+    &:hover .yes{
+        display: block;
+    }
+}
+
+.display-main{
+    width: 100%;
+    height: 81.6vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(228, 228, 228);
+    padding:0 0px;
+    .students-det{
+        width: 60%;
+        height: 100%;
+        background-color: white;
+    }
+    .others{
+        width: 39.1%;
+        height: 100%;
+        background-color: white;
+    }
+}
+
+// register student portal
+.student-nav-active{
+    color: rgb(155, 23, 23);
+}
+#view-btn, #reg-btn{
+    font-size: 17px;
+    cursor:pointer;
+    &:hover{
+        color: rgb(155, 23, 23);
+        transition: all 0.9s ease;
+    }
+}
+
+#filter-btn{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 17px;
+    cursor:pointer;
+    &:hover{
+        color: rgb(155, 23, 23);
+        transition: all 0.9s ease;
+    }
+}
+#view-btn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#reg-btn{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.register{
+    width: 70%;
+    margin: 0 auto;
+}
+.student-nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(226, 226, 226);
+}
+
+// Send Message
+
+.msg-form{
+   margin: 0 auto;
+   width: 30%;
+   background-color: white;
+   padding: 20px;
+   border-radius: 15px;
+}
+.subject-div{
+    margin: 0 auto;
+   width: 95%;
+   background-color: white;
+   padding: 20px;
+   border-radius: 15px;
+}
+
+.message-div{
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    .message-div-con{
+        width: 100%;
+        background-color: #F5F5F5;
+    }
+    .title{
+        width: 100%;
+        background-color: #343A40;
+    }
+    .footer{
+        width: 100%;
+        background-color: #343A40;
+    }
+    .message{
+        height: auto;
+        background-color: #F5F5F5;
+    }
+    .sides{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-left: 1px solid black;
+    }
+}
+
+.profile-det{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.users{
+    display: flex;
+    div{
+        width: 100%;
+    }
+}
+.icn{
+    font-size: 90px;
+}
+
+.view-btnn{
+    padding: 15px 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    &:hover{
+        background-color: white;
+        color: black;
+        transition: all ease-in-out 0.5s;
+        transform: scale(1.01);
+    }
+}
+.quick-access{
+    display: flex;
+    div{
+        width: 100%;
+    }
+}
+.admin-register{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.user-name{
+    color: rgb(145, 40, 40);
+    &:hover{
+        color: rgb(131, 33, 33); 
+        transition: all ease-in-out 0.3s;
+    }
+}
+.edit-form{
+    width: 60%;
+    margin: 0 auto;
+}
+#table{
+    td{
+        word-wrap: break-word;
+    }
+}
+.test{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modall-content {
+    border-radius: 7px;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+#closebtn{
+    color: #333333;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover{
+        color: black;
+    }
+}
+
+
+.modall-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modall-body {padding: 2px 16px;}
+
+.modall-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}

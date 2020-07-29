@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Shop</title>
+    <link rel="stylesheet" href="./sass/main.css">
+    <!-- Bootsrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Owl Carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha256-fDncdclXlALqR3HOO34OGHxek91q8ApmD3gGldM+Rng=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" integrity="sha256-2DoaRRHfHWna6mpfGImxAx/cu0vFGpqEkcf/YXf+yk4=" crossorigin="anonymous" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+</head>
+<body>
+    
+
+<!-- Start Header -->
+<header id="header">
+    <nav class="my-nav bg-dark">
+        <div class="my-main-nav">
+            <h2>Web Shop <i class="fas fa-shopping-cart"></i></h2>
+            <div class="search">
+                <form class="form-inline">
+                    <div class="form-group">
+                      <input placeholder="Search" type="search" id="inputPassword4" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+                      <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                  </form>
+            </div>
+            <div class="left-nav">
+                <ul>
+                    <li id="login-drop-btn" class="login">Login <i class="fas fa-chevron-down"></i><br>
+                    <ul id="login-dropdown" class="login-extended">
+                        <li>Login</li>
+                        <li>Create Account</li>
+                    </ul>
+                    </li>
+                    <li class="cart"><i class="fas fa-shopping-cart"><span>0</span></i></li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+</header>
+<!-- End Header -->
+
+
+<!-- Start Main Site -->
+<main>
+
+
+<!-- Shopping Site Section -->
+    <section id="cart" class="py-3">
+        <div class="container-fluid w-75">
+            <h5>Shopping Cart <i class="fas fa-shopping-cart"></i></h5>
+
+            <!-- Shooping Cart Items -->
+            <div class="row">
+                <div class="col-sm-9">
+                    <!-- Cart Item -->
+                    <div class="row border-top py-3 mt-3">
+                        <div class="col-sm-2">
+                            <img src="./assets/images/pad5.PNG" height="120px" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5>Item Name</h5>
+                            <small>by Owner</small>
+                            <!-- Product Rating -->
+                            <div class="d-flex">
+                                <div class="rating text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <a href="" class="px-2">21,000 ratings</a>
+                            </div>
+                            <!-- End Of Product Rating -->
+                            <!-- Product Qty -->
+                            <div class="qty d-flex pt-2">
+                                <div class="d-flex">
+                                    <button data-id="product1" class="qty-up border bg-light p-1"><i class="fas fa-angle-up"></i></button>
+                                    <input data-id="product1" type="text" name="" class="qty_input border px-2 bg-light w-100" disabled value="1" placeholder="1">
+                                    <button data-id="product1" class="qty-down border bg-light p-1"><i class="fas fa-angle-down"></i></button>
+                                </div>
+                                <button type="submit" class="btn text-danger px-3 border-right">Delete</button>
+                                <button type="submit" class="btn text-danger">Save for later</button>
+                            </div>
+                            <!-- End Of Product Qty -->
+                        </div>
+                        <div class="col-sm-2 text-right">
+                            <div class="text-danger">
+                                $ <span class="product_price">152</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border-top py-3 mt-3">
+                        <div class="col-sm-2">
+                            <img src="./assets/images/pad5.PNG" height="120px" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-sm-8">
+                            <h5>Item Name</h5>
+                            <small>by Owner</small>
+                            <!-- Product Rating -->
+                            <div class="d-flex">
+                                <div class="rating text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <a href="" class="px-2">21,000 ratings</a>
+                            </div>
+                            <!-- End Of Product Rating -->
+                            <!-- Product Qty -->
+                            <div class="qty d-flex pt-2">
+                                <div class="d-flex">
+                                    <button data-id="product2" class="qty-up border bg-light p-1"><i class="fas fa-angle-up"></i></button>
+                                    <input data-id="product2" type="text" name="" class="qty_input border px-2 bg-light w-100" disabled value="1" placeholder="1">
+                                    <button data-id="product2" class="qty-down border bg-light p-1"><i class="fas fa-angle-down"></i></button>
+                                </div>
+                                <button type="submit" class="btn text-danger px-3 border-right">Delete</button>
+                                <button type="submit" class="btn text-danger">Save for later</button>
+                            </div>
+                            <!-- End Of Product Qty -->
+                        </div>
+                        <div class="col-sm-2 text-right">
+                            <div class="text-danger">
+                                $ <span class="product_price">152</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Of Cart Item -->
+                </div>
+                <div class="col-sm-3">
+                    <!-- Sub total -->
+                    <div class="sub-total border text-center mt-2">
+                        <h6 class="text-success py-3"><i class="fas fa-check"></i>Your Order Is Eligible For Delivery</h6>
+                        <div class="border-top py-4">
+                            <h5>Subtotal (2 items): <span class="text-danger">$ <span class="text-danger" id="deal-price">152.00</span></span></h5>
+                            <button type="submit" class="btn btn-warning mt-3">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    <!-- End Of Sub total -->
+                </div>
+            </div>
+            <!-- End Of Shooping Cart Items -->
+        </div>
+    </section>
+<!-- End Of Shopping Site Section -->
+
+<!-- New Products -->
+<section id="new-product">
+    <div class="container py-5 bg-light">
+        <h4>New Products</h4>
+        <hr>
+        <!-- Owl Carousel for top sale -->
+            <div class="owl-carousel owl-theme">
+                <div class="item py-2 px-2">
+                    <div class="product">
+                        <a href=""><img src="./assets/images/item11.jpeg" class="img-fluid" alt=""></a>
+                        <div class="text-center">
+                            <h6>Titl Phone</h6>
+                            <div class="rating text-warning">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <div class="price py-2">
+                                <span>$1524</span>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item py-2 px-2">
+                    <div class="product">
+                        <a href=""><img src="./assets/images/item11.jpeg" class="img-fluid" alt=""></a>
+                        <div class="text-center">
+                            <h6>Titl Phone</h6>
+                            <div class="rating text-warning">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <div class="price py-2">
+                                <span>$1524</span>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item py-2 px-2">
+                    <div class="product">
+                        <a href=""><img src="./assets/images/mac7.PNG" class="img-fluid" alt=""></a>
+                        <div class="text-center">
+                            <h6>Titl Phone</h6>
+                            <div class="rating text-warning">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <div class="price py-2">
+                                <span>$1524</span>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item py-2 px-2">
+                    <div class="product">
+                        <a href=""><img src="./assets/images/item17.jpeg" class="img-fluid" alt=""></a>
+                        <div class="text-center">
+                            <h6>Titl Phone</h6>
+                            <div class="rating text-warning">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <div class="price py-2">
+                                <span>$1524</span>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item py-2 px-2">
+                    <div class="product">
+                        <a href=""><img src="./assets/images/item22.jpeg" class="img-fluid" alt=""></a>
+                        <div class="text-center">
+                            <h6>Titl Phone</h6>
+                            <div class="rating text-warning">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <div class="price py-2">
+                                <span>$1524</span>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item py-2 px-2">
+                    <div class="product">
+                        <a href=""><img src="./assets/images/mac1.PNG" class="img-fluid" alt=""></a>
+                        <div class="text-center">
+                            <h6>Titl Phone</h6>
+                            <div class="rating text-warning">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <div class="price py-2">
+                                <span>$1524</span>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item py-2 px-2">
+                    <div class="product">
+                        <a href=""><img src="./assets/images/mac2.PNG" class="img-fluid" alt=""></a>
+                        <div class="text-center">
+                            <h6>Titl Phone</h6>
+                            <div class="rating text-warning">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <div class="price py-2">
+                                <span>$1524</span>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        <!-- End Of Owl Carousel for top sale -->
+    </div>
+</section>
+<!-- End Of New Products -->
+</main>
+<!-- End Main Site -->
+
+<!-- Start Footer -->
+<footer id="footer" class="bg-dark text-white py-5">
+<div class="container">
+<div class="row">
+    <div class="col-lg-3 col-12">
+        <h4>Web Shop <i class="fas fa-shopping-cart"></i></h4>
+        <p class="text-white-50">This is a E-commerce Web Store Powered By Udokovic Soft</p>
+    </div>
+    <div class="col-lg-4 col-12">
+        <h4>Get Latest Offer</h4>
+        <small class="text-white-50">Subscribe to our newsletter</small>
+        <form class="form-row">
+            <div class="col">
+                <input type="email" name="" class="form-control" placeholder="Email">
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary mb-2">Subscribe!</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-2 col-12">
+        <h4>Quick Links</h4>
+        <div class="d-flex flex-column flex-wrap">
+            <a href="" style="text-decoration: none;" class="text-white-50 pb-1">About Us</a>
+            <a href="" style="text-decoration: none;" class="text-white-50 pb-1">Contact Us</a>
+            <a href="" style="text-decoration: none;" class="text-white-50 pb-1">Delivery Information</a>
+            <a href="" style="text-decoration: none;" class="text-white-50 pb-1">Terms & Conditions</a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-12">
+        <h4>Account</h4>
+        <div class="d-flex flex-column flex-wrap">
+            <a href="" style="text-decoration: none;" class="text-white-50 pb-1">My Account</a>
+            <a href="" style="text-decoration: none;" class="text-white-50 pb-1">Order History</a>
+            <a href="" style="text-decoration: none;" class="text-white-50 pb-1">Wish List</a>
+            <a href="" style="text-decoration: none;" class="text-white-50 pb-1">Newsletters</a>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+<div class="copyright text-center bg-dark text-white py-2">
+<p>&copy; Copyrights 2020. Developed By <a class="text-white-50" href="#">Udokovic Soft</a></p>
+</div>
+<!-- End Footer -->
+
+
+
+
+
+<!-- JAVASCRIPT CDN'S -->
+ <!-- Jquery -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+   
+    <!-- Pooper Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js" integrity="sha256-FT/LokHAO3u6YAZv6/EKb7f2e0wXY3Ff/9Ww5NzT+Bk=" crossorigin="anonymous"></script>
+
+
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha256-4OK8Th0+5QJMThqlimytmqQvxjqMic4YATocjyuUh1w=" crossorigin="anonymous"></script>
+
+    <!-- Isotope plugin CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+
+    <!-- Index JS -->
+    <script src="./index.js"></script>
+</body>
+</html>
